@@ -13,12 +13,7 @@ This repository contains the implementation of a Book Recommender System using c
    - [Preprocessing Steps](#preprocessing-steps)
 5. [Model Implementation](#model-implementation)
    - [Creating the User-Book Interaction Matrix](#creating-the-user-book-interaction-matrix)
-   - [Building the Collaborative Filtering Model](#building-the-collaborative-filtering-model)
-6. [Deployment](#deployment)
-7. [Conclusion](#conclusion)
-8. [How to Run the Project](#how-to-run-the-project)
-9. [Contributing](#contributing)
-10. [License](#license)
+6. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -65,3 +60,9 @@ Create a pivot table where rows represent book titles and columns represent user
 
 ```python
 book_pivot = final_rating.pivot_table(columns='user_id', index='title', values='rating')
+
+### Building the Collaborative Filtering Model
+Use the Nearest Neighbors algorithm to find similar books and generate book recommendations.
+
+## Conclusion
+The **Book Recommender System** effectively provides personalized book recommendations using collaborative filtering. The system leverages user rating data to identify similar books and users, offering tailored suggestions.
