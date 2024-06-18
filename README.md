@@ -58,9 +58,6 @@ The dataset used for this project is obtained from [Kaggle](https://www.kaggle.c
 
 Create a pivot table where rows represent book titles and columns represent user IDs, with the values being the ratings.
 
-```python
-book_pivot = final_rating.pivot_table(columns='user_id', index='title', values='rating')
-
 ### Building the Collaborative Filtering Model
 Use the Nearest Neighbors algorithm to find similar books and generate book recommendations.
 
